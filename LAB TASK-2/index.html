@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Login Form Validation</title>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your Email"
+              id="email"
+              onchange="getEmail();"
+            />
+          </td>
+          <td>
+            <p id="emailErr" style="color: red"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="password"
+              onkeyup="getPassword();"
+            />
+          </td>
+          <td>
+            <p id="passwordErr" style="color: red"></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit" onclick="return collectData();">
+              Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <hr/>
+    <h3>Wrong Submission Attempts: <span id="WrongCount">0</span></h3>
+  </body>
+</html>
+
+
+
+
+
+
+
